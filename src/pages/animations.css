@@ -1,0 +1,41 @@
+@keyframes popper-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes celebration-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes unicorn-fly {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(20px);
+    opacity: 1;
+  }
+}
+
+.popper-animated {
+  animation: popper-spin 1s infinite;
+}
+
+.celebration-animated {
+  animation: celebration-bounce 1s infinite;
+}
+
+.unicorn-animated {
+  animation: unicorn-fly 1s infinite alternate;
+}
